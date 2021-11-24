@@ -2,16 +2,16 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../../app/store';
-import Controller from './Controller';
+import RegisterPage from './RegisterPage';
 
-describe('The Controller Tests:', () => {
-    it('Should display "Controller"', () => {
+describe('The RegisterPage Tests:', () => {
+    it('Should display "RegisterPage"', () => {
         const { getByText } = render(
             <Provider store={store}>
-                <Controller>abc</Controller>
+                <RegisterPage />
             </Provider>
         );
 
-        expect(getByText(/Controller/i)).toBeInTheDocument();
+        expect(getByText(/Register Page!/i)).toBeInTheDocument();
     });
 });

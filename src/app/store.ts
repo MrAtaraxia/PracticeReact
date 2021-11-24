@@ -1,11 +1,19 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import currentUserSlice from '../slices/currentUser.slice';
+import gameSlice from '../slices/game.slice';
+import meetingSlice from '../slices/meeting.slice';
+import messageSlice from '../slices/message.slice';
+import userSlice from '../slices/user.slice';
 
-export const store = configureStore({
+export const store = configureStore( {
   reducer: {
-    counter: counterReducer,
+    currentUser: currentUserSlice,
+    user: userSlice,
+    game: gameSlice,
+    meeting: meetingSlice,
+    message: messageSlice
   },
-});
+} );
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;

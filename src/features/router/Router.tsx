@@ -4,7 +4,7 @@ export type RouterProps = {
 }
 
 const Router: React.FC<RouterProps> = () => {
-    const toReturn = <>Router</>
+    const toReturn = <div>Router</div>
     return(
         <>
             {toReturn}
