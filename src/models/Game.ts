@@ -1,8 +1,10 @@
 type Game = {
+    id: number;
     name: string;
 }
 
 const DefaultGame: Game = {
+    id: 0,
     name: ""
 }
 

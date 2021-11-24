@@ -4,7 +4,7 @@ type User = {
 }
 
 const DefaultUser: User = {
-    id: 1,
+    id: 0,
     name: ""
 }
 

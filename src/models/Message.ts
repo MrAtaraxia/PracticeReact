@@ -9,7 +9,7 @@ type Message = {
 }
 
 const DefaultMessage: Message = {
-    id: 1,
+    id: 0,
     fromUser: DefaultUser,
     toUser: DefaultUser,
     sent: Date.now(),
