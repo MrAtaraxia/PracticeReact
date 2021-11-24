@@ -17,4 +17,4 @@ const DefaultMessage: Message = {
 }
 
 export { DefaultMessage };
-export default User;
+export default Message;

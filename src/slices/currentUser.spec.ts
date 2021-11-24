@@ -1,7 +1,7 @@
 import currentUser, { CurrentUserState, set, clear } from './currentUser.slice';
 import { DefaultUser } from '../models/User'
 
-describe( 'counter reducer', () =>
+describe( 'current user reducer', () =>
 {
     const initialState: CurrentUserState = [];
     it( 'should handle initial state', () =>
