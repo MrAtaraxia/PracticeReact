@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './LoginPage.module.css'
-export type LoginPageProps = {
+import styles from './Login.module.css'
+export type LoginProps = {
 }
 
-const LoginPage : React.FC<LoginPageProps> = () => {
+const LoginPage : React.FC<LoginProps> = () => {
 
     const toReturn = <div className={styles.row}>Login Page!</div>
     return(
