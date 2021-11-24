@@ -1,6 +1,7 @@
 import React from 'react';
-
-const Navigation = () => {
+export type NavigationProps = {
+}
+const Navigation: React.FC<NavigationProps> = () => {
 
     const toReturn = <>Navigation Page!</>
     return(
