@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Router = () => {
+export type RouterProps = {
+}
+
+const Router: React.FC<RouterProps> = () => {
     const toReturn = <>Router</>
     return(
         <>

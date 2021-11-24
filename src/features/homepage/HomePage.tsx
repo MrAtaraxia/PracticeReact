@@ -1,6 +1,8 @@
 import React from 'react';
+export type HomePageProps = {
+}
 
-const HomePage = () => {
+const HomePage : React.FC<HomePageProps> = () => {
 
     const toReturn = <>Home Page!</>
     return(
