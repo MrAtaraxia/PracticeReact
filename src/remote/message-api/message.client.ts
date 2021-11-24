@@ -1,11 +1,11 @@
 import axios from "axios";
 import baseurl from "../base-url";
 
-const userClient = axios.create({
-    baseURL: baseurl + "/users",
+const messageClient = axios.create({
+    baseURL: baseurl + "/messages",
     headers: {
         "Content-Type": 'application/json',
     }
 });
 
-export default userClient;
+export default messageClient;

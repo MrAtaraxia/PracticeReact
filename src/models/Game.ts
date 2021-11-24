@@ -1,7 +1,10 @@
-export type Game = {
+type Game = {
     name: string;
 }
 
-export type DefaultGame = {
+const DefaultGame: Game = {
     name: ""
 }
+
+export default Game;
+export { DefaultGame };

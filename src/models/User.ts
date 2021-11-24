@@ -1,9 +1,12 @@
 type User = {
+    id: number;
     name: string;
 }
 
-export type DefaultUser = {
+const DefaultUser: User = {
+    id: 1,
     name: ""
 }
 
+export { DefaultUser };
 export default User;
