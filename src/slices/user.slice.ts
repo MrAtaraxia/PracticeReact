@@ -9,18 +9,24 @@ const userSlice = createSlice( {
     name: 'user',
     initialState,
     reducers: {
-        addUser: ( state, action: PayloadAction<User> ) =>
+        add: ( state, action: PayloadAction<User> ) =>
         {
             state.push( action.payload );
         },
-        removeUser: ( state, action: PayloadAction<number> ) =>
+        remove: ( state, action: PayloadAction<number> ) =>
         {
             // Remove 1 element at the index where the user id matches the payload id
             state.splice( state.findIndex( ( user => user.id === action.payload ) ), 1 );
+        },
+        update: ( state, action: PayloadAction<User> ) =>
+        {
+            // Update 1 element at the index where the User id matches the payload id
+            state[state.findIndex( ( user => user.id === action.payload.id ) )] =
+                action.payload;
         }
     }
 } );
 
-export const { addUser, removeUser } = userSlice.actions;
+export const { add, remove, update } = userSlice.actions;
 
 export default userSlice.reducer;

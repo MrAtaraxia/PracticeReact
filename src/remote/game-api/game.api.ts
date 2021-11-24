@@ -8,6 +8,13 @@ export const getGame = async ( id: number ): Promise<Game> =>
     return game;
 }
 
+export const getGames = async (): Promise<Game[]> =>
+{
+    console.log( "Getting All Games." );
+    const { data: games } = await gameClient.get<Game[]>( `/` );
+    return games;
+}
+
 export const createGame = async ( theGame: Game ): Promise<Game> =>
 {
     console.log( "Creating Game - " + theGame.id );

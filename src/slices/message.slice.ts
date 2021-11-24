@@ -9,18 +9,24 @@ const messageSlice = createSlice( {
     name: 'message',
     initialState,
     reducers: {
-        addMessage: ( state, action: PayloadAction<Message> ) =>
+        add: ( state, action: PayloadAction<Message> ) =>
         {
             state.push( action.payload );
         },
-        removeMessage: ( state, action: PayloadAction<number> ) =>
+        remove: ( state, action: PayloadAction<number> ) =>
         {
             // Remove 1 element at the index where the message id matches the payload id
             state.splice( state.findIndex( ( message => message.id === action.payload ) ), 1 );
+        },
+        update: ( state, action: PayloadAction<Message> ) =>
+        {
+            // Update 1 element at the index where the Message id matches the payload id
+            state[state.findIndex( ( message => message.id === action.payload.id ) )] =
+                action.payload;
         }
     }
 } );
 
-export const { addMessage, removeMessage } = messageSlice.actions;
+export const { add, remove, update } = messageSlice.actions;
 
 export default messageSlice.reducer;
