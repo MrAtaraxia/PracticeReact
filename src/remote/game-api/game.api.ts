@@ -11,14 +11,25 @@ export const getGame = async ( id: number ): Promise<Game> =>
 export const getGames = async (): Promise<Game[]> =>
 {
     console.log( "Getting All Games." );
-    const { data: games } = await gameClient.get<Game[]>( `/` );
-    return games;
+    let toReturn: any;
+    try
+    {
+        const { data: games } = await gameClient.get<Game[]>( `/` );
+        toReturn = games;
+    } catch ( e )
+    {
+        console.log( e )
+    }
+    return toReturn;
 }
 
 export const createGame = async ( theGame: Game ): Promise<Game> =>
 {
     console.log( "Creating Game - " + theGame.id );
-    const { data: game } = await gameClient.post<Game>( `/`, theGame );
+    const { data: game } = await gameClient
+        .post<Game>( `/`, theGame )
+        .catch()
+
     return game;
 }
 
