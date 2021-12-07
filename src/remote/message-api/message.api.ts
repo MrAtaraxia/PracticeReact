@@ -1,4 +1,4 @@
-import Message from "../../models/Message";
+import Message from "../../components/message/model/Message";
 import messageClient from "./message.client";
 
 export const getMessage = async ( id: number ): Promise<Message> =>

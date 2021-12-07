@@ -1,5 +1,5 @@
 import currentUser, { UserState, add, remove, update } from './user.slice';
-import User, { DefaultUser } from '../models/User'
+import User, { DefaultUser } from '../model/User'
 
 describe( 'user reducer', () =>
 {

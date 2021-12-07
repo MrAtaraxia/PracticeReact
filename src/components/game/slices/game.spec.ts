@@ -1,5 +1,5 @@
 import currentGame, { GameState, add, remove, update } from './game.slice';
-import Game, { DefaultGame } from '../models/Game'
+import Game, { DefaultGame } from '../model/Game'
 
 describe( 'game reducer', () =>
 {

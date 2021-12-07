@@ -5,9 +5,9 @@ import Navigation from './components/navigation/Navigation';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 
-type props = {}
+export type AppProps = {}
 
-const App:React.FC<props> = () => {
+const App:React.FC<AppProps> = () => {
   return (
     <Provider store={store}>
       <div className="App">

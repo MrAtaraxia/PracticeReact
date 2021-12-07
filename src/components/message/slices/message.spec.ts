@@ -1,5 +1,5 @@
 import currentMessage, { MessageState, add, remove, update } from './message.slice';
-import Message, { DefaultMessage } from '../models/Message'
+import Message, { DefaultMessage } from '../model/Message'
 
 describe( 'message reducer', () =>
 {

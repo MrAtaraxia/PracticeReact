@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import Meeting from "../models/Meeting";
+import Meeting from "../model/Meeting";
 
 export type MeetingState = Meeting[];
 

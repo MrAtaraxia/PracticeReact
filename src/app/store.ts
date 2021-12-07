@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import currentUserSlice from '../slices/currentUser.slice';
-import gameSlice from '../slices/game.slice';
-import meetingSlice from '../slices/meeting.slice';
-import messageSlice from '../slices/message.slice';
-import userSlice from '../slices/user.slice';
+import currentUserSlice from '../components/user/slices/currentUser.slice';
+import gameSlice from '../components/game/slices/game.slice';
+import meetingSlice from '../components/meeting/slices/meeting.slice';
+import messageSlice from '../components/message/slices/message.slice';
+import userSlice from '../components/user/slices/user.slice';
 
 export const store = configureStore( {
   reducer: {

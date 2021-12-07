@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import Message from "../models/Message";
+import Message from "../model/Message";
 
 export type MessageState = Message[];
 

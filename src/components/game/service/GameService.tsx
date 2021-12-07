@@ -1,12 +1,12 @@
 import React from 'react';
-import Game from '../models/Game';
+import Game from '../model/Game';
 import { 
     createGame as createAPI, 
     deleteGame as deleteAPI, 
     getGame    as getAPI, 
     getGames   as getAllAPI, 
     updateGame as updateAPI 
-} from '../remote/game-api/game.api';
+} from '../../../remote/game-api/game.api';
 import { add, remove, update } from '../slices/game.slice';
 
 export type GameServiceProps = {

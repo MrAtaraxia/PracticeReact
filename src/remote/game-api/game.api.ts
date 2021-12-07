@@ -1,4 +1,4 @@
-import Game from "../../models/Game";
+import Game from "../../components/game/model/Game";
 import gameClient from "./game.client";
 
 export const getGame = async ( id: number ): Promise<Game> =>

@@ -1,4 +1,4 @@
-import { DefaultGame } from "../../../models/Game";
+import { DefaultGame } from "../../../components/game/model/Game";
 
 const gameClient = {
     get: jest.fn( async () =>

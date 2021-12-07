@@ -1,4 +1,4 @@
-import User, { DefaultUser } from "./User";
+import User, { DefaultUser } from "../../user/model/User";
 
 type Message = {
     id: number;

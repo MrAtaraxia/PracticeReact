@@ -1,5 +1,5 @@
 import currentUser, { CurrentUserState, set, clear } from './currentUser.slice';
-import { DefaultUser } from '../models/User'
+import { DefaultUser } from '../model/User'
 
 describe( 'current user reducer', () =>
 {

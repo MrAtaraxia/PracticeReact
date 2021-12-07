@@ -1,4 +1,4 @@
-import User from "../../models/User"
+import User from "../../components/user/model/User"
 import userClient from "./user.client";
 
 export const getUser = async ( id: number ): Promise<User> =>

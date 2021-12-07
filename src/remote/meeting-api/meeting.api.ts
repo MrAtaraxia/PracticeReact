@@ -1,4 +1,4 @@
-import Meeting from "../../models/Meeting";
+import Meeting from "../../components/meeting/model/Meeting";
 import meetingClient from "./meeting.client";
 
 export const getMeeting = async ( id: number ): Promise<Meeting> =>
